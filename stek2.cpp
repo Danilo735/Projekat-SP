@@ -21,15 +21,15 @@ int main(){
     cout << "unesite broj elemenata: ";
     cin >> brojEl;
 
-    cout << "Unesite " << brojEl << " elemenata: " << endl;
+    cout << "unesite " << brojEl << " elemenata: " << endl;
     for (int i = 0; i < brojEl; i++) { //petlja ide od 0 do broja elemenata koje je korisnik uneo
         int element;
         cin >> element;
         Stek.push(element); // dodajemo elemente na stek
     }
 
-    cout<< "Vrh steka: "<< Stek.top() <<endl; // 30 je L pa ispisuje 30
-    cout<< "Velicina steka: " << Stek.size()<< endl;  // Imamo 3 elementa na steku
+    cout<< "vrh steka: "<< Stek.top() <<endl; // 30 je L pa ispisuje 30
+    cout<< "velicina steka: " << Stek.size()<< endl;  // Imamo 3 elementa na steku
 
     Stek.pop(); // uklanjamo element na vrhu steka
     cout << "nakon pop, novi vrh steka: " <<Stek.top() << endl; //20
